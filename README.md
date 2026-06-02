@@ -58,7 +58,7 @@ OpenCode Skills are customizable workflows that teach OpenCode how to perform sp
 
 ### Data & Analysis
 
-- More skills coming soon!
+- [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes your recent OpenCode chat history to identify coding patterns, development gaps, and areas for improvement, curates learning resources from HackerNews, and sends personalized growth reports. 📖 **Comprehensive**
 
 ### Business & Marketing
 
@@ -92,7 +92,7 @@ OpenCode Skills are customizable workflows that teach OpenCode how to perform sp
 
 ### Collaboration & Project Management
 
-- More skills coming soon!
+- [Skill Share](./skill-share/) - Creates new OpenCode skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery. 📄 **Standard**
 
 ### Security & Systems
 
@@ -114,6 +114,11 @@ Skills are categorized by documentation depth:
 
 1. Install skills to your global OpenCode directory:
    ```bash
+   # Using the official plural path (recommended)
+   mkdir -p ~/.config/opencode/skills/
+   cp -r skill-name ~/.config/opencode/skills/
+
+   # Or the singular path (also supported)
    mkdir -p ~/.config/opencode/skill/
    cp -r skill-name ~/.config/opencode/skill/
    ```
@@ -134,6 +139,11 @@ Skills are categorized by documentation depth:
 
 1. Install skills to your project directory:
    ```bash
+   # Using the official plural path (recommended)
+   mkdir -p .opencode/skills/
+   cp -r skill-name .opencode/skills/
+
+   # Or the singular path (also supported)
    mkdir -p .opencode/skill/
    cp -r skill-name .opencode/skill/
    ```
@@ -538,8 +548,8 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 ### Inspiration & Use Cases
 
-- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - 50 ways people use AI coding agents
-- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion integration skills
+- [Lenny's Newsletter](https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code) - Ways people use AI coding agents
+- [Notion Skills](https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0) - Notion agent integration skills
 
 ## License
 
@@ -549,7 +559,7 @@ Individual skills may have different licenses - please check each skill's folder
 
 ---
 
-**Note**: OpenCode Skills are compatible with OpenCode's skill system. Skills are automatically discovered from `~/.config/opencode/skill/`, `.opencode/skill/`, and `.claude/skills/` directories, ensuring seamless integration.
+**Note**: OpenCode Skills are compatible with OpenCode's skill system. Skills are automatically discovered from multiple directories, in priority order: `.opencode/skills/` (project, recommended), `.opencode/skill/` (project, also supported), `~/.config/opencode/skills/` (global, recommended), `~/.config/opencode/skill/` (global, also supported), `.claude/skills/` (backward compatible for migration).
 
 ---
 

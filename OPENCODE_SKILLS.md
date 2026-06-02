@@ -66,9 +66,12 @@ This document provides an index of all available OpenCode skills in this reposit
 ## Configuration
 
 Skills are automatically discovered from:
-- Global: `~/.config/opencode/skill/*/SKILL.md`
-- Project: `.opencode/skill/*/SKILL.md`
+- Project (recommended): `.opencode/skills/*/SKILL.md`
+- Project (also supported): `.opencode/skill/*/SKILL.md`
+- Global (recommended): `~/.config/opencode/skills/*/SKILL.md`
+- Global (also supported): `~/.config/opencode/skill/*/SKILL.md`
 - Backward compatible: `.claude/skills/*/SKILL.md`
+- Backward compatible: `~/.claude/skills/*/SKILL.md`
 
 You can control skill access permissions in your `opencode.json`:
 
@@ -170,9 +173,11 @@ You can control skill access permissions in your `opencode.json`:
 **Solution**:
 
 OpenCode uses this priority order:
-1. `.opencode/skill/` (project-local, highest priority)
-2. `~/.config/opencode/skill/` (global)
-3. `.claude/skills/` (backward compatible)
+1. `.opencode/skills/` (project-local, recommended, highest priority)
+2. `.opencode/skill/` (project-local, also supported)
+3. `~/.config/opencode/skills/` (global, recommended)
+4. `~/.config/opencode/skill/` (global, also supported)
+5. `.claude/skills/` (backward compatible)
 
 If you have duplicates, remove from lower-priority locations:
 ```bash

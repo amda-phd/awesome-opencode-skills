@@ -26,8 +26,9 @@ This repository was originally created for Claude Skills and has been migrated t
    - Created `.opencode/skills.json` - Skills metadata for OpenCode
 
 2. **Updated skill installation paths**
-   - Changed from `~/.config/claude-code/skills/` to `~/.config/opencode/skill/`
-   - Added project-local installation to `.opencode/skill/`
+   - Changed from `~/.config/claude-code/skills/` to `~/.config/opencode/skills/` (official, recommended)
+   - Also supported: `~/.config/opencode/skill/` (singular form)
+   - Added project-local installation to `.opencode/skills/` (recommended) and `.opencode/skill/`
    - Maintained backward compatibility with `.claude/skills/`
 
 3. **Updated documentation**
@@ -68,9 +69,12 @@ Skills maintain the same SKILL.md format with YAML frontmatter:
 
 ### Skill Discovery
 OpenCode automatically discovers skills from:
-- **Global**: `~/.config/opencode/skill/*/SKILL.md`
-- **Project**: `.opencode/skill/*/SKILL.md`
+- **Global (recommended)**: `~/.config/opencode/skills/*/SKILL.md`
+- **Global (also supported)**: `~/.config/opencode/skill/*/SKILL.md`
+- **Project (recommended)**: `.opencode/skills/*/SKILL.md`
+- **Project (also supported)**: `.opencode/skill/*/SKILL.md`
 - **Backward Compatible**: `.claude/skills/*/SKILL.md`
+- **Backward Compatible (global)**: `~/.claude/skills/*/SKILL.md`
 
 ### Permissions
 OpenCode supports skill permissions via `opencode.json`:

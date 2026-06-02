@@ -62,7 +62,7 @@ When a user requests analysis of their developer growth or coding patterns from 
 
 1. **Access Chat History**
 
-   Read the chat history from `~/.claude/history.jsonl`. This file is a JSONL format where each line contains:
+   Read the chat history from `~/.config/opencode/history.jsonl`. This file is a JSONL format where each line contains:
    - `display`: The user's message/request
    - `project`: The project being worked on
    - `timestamp`: Unix timestamp (in milliseconds)

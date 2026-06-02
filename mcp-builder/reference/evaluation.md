@@ -389,13 +389,13 @@ After creating your evaluation file, you can use the provided evaluation harness
 
    Or install manually:
    ```bash
-   pip install anthropic mcp
+   pip install opencode mcp
    ```
 
 2. **Set API Key**
 
    ```bash
-   export ANTHROPIC_API_KEY=your_api_key_here
+   export OPENCODE_API_KEY=your_api_key_here
    ```
 
 ## Evaluation File Format
@@ -554,7 +554,7 @@ Here's a complete example of creating and running an evaluation:
 
 ```bash
 pip install -r scripts/requirements.txt
-export ANTHROPIC_API_KEY=your_api_key
+export OPENCODE_API_KEY=your_api_key
 ```
 
 3. **Run evaluation**:

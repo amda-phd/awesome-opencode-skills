@@ -114,6 +114,11 @@ Skills are categorized by documentation depth:
 
 1. Install skills to your global OpenCode directory:
    ```bash
+   # Using the official plural path (recommended)
+   mkdir -p ~/.config/opencode/skills/
+   cp -r skill-name ~/.config/opencode/skills/
+
+   # Or the singular path (also supported)
    mkdir -p ~/.config/opencode/skill/
    cp -r skill-name ~/.config/opencode/skill/
    ```
@@ -134,6 +139,11 @@ Skills are categorized by documentation depth:
 
 1. Install skills to your project directory:
    ```bash
+   # Using the official plural path (recommended)
+   mkdir -p .opencode/skills/
+   cp -r skill-name .opencode/skills/
+
+   # Or the singular path (also supported)
    mkdir -p .opencode/skill/
    cp -r skill-name .opencode/skill/
    ```
@@ -549,7 +559,7 @@ Individual skills may have different licenses - please check each skill's folder
 
 ---
 
-**Note**: OpenCode Skills are compatible with OpenCode's skill system. Skills are automatically discovered from `~/.config/opencode/skill/`, `.opencode/skill/`, and `.claude/skills/` directories, ensuring seamless integration.
+**Note**: OpenCode Skills are compatible with OpenCode's skill system. Skills are automatically discovered from multiple directories, in priority order: `.opencode/skills/` (project, recommended), `.opencode/skill/` (project, also supported), `~/.config/opencode/skills/` (global, recommended), `~/.config/opencode/skill/` (global, also supported), `.claude/skills/` (backward compatible for migration).
 
 ---
 

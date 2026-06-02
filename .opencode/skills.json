@@ -1,7 +1,7 @@
 {
   "$schema": "https://opencode.ai/skills.schema.json",
   "name": "awesome-opencode-skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A curated collection of practical OpenCode Skills for enhancing productivity",
   "skills": [
     {
@@ -47,16 +47,130 @@
       "description": "Test web applications using Playwright"
     },
     {
+      "name": "developer-growth-analysis",
+      "path": "./developer-growth-analysis",
+      "category": "development",
+      "description": "Analyze coding patterns and curate personalized growth reports"
+    },
+    {
+      "name": "mcp-builder",
+      "path": "./mcp-builder",
+      "category": "development",
+      "description": "Create MCP servers for integrating external APIs and services with LLMs"
+    },
+    {
+      "name": "skill-creator",
+      "path": "./skill-creator",
+      "category": "development",
+      "description": "Guide for creating effective OpenCode Skills"
+    },
+    {
+      "name": "staff-engineer-review",
+      "path": "./staff-engineer-review",
+      "category": "development",
+      "description": "Deep code review of pull requests as a Staff+ engineer"
+    },
+    {
       "name": "brand-guidelines",
       "path": "./brand-guidelines",
       "category": "business-marketing",
       "description": "Apply OpenCode branding to artifacts"
     },
     {
+      "name": "competitive-ads-extractor",
+      "path": "./competitive-ads-extractor",
+      "category": "business-marketing",
+      "description": "Extract and analyze competitor advertisements from ad libraries"
+    },
+    {
+      "name": "domain-name-brainstormer",
+      "path": "./domain-name-brainstormer",
+      "category": "business-marketing",
+      "description": "Generate domain name ideas and check availability across TLDs"
+    },
+    {
+      "name": "internal-comms",
+      "path": "./internal-comms",
+      "category": "business-marketing",
+      "description": "Write internal communications using company-specific formats"
+    },
+    {
+      "name": "lead-research-assistant",
+      "path": "./lead-research-assistant",
+      "category": "business-marketing",
+      "description": "Identify and qualify high-quality leads for your product or service"
+    },
+    {
+      "name": "content-research-writer",
+      "path": "./content-research-writer",
+      "category": "communication-writing",
+      "description": "Research and write high-quality content with citations and feedback"
+    },
+    {
+      "name": "meeting-insights-analyzer",
+      "path": "./meeting-insights-analyzer",
+      "category": "communication-writing",
+      "description": "Analyze meeting transcripts for behavioral patterns and insights"
+    },
+    {
+      "name": "canvas-design",
+      "path": "./canvas-design",
+      "category": "creative-media",
+      "description": "Create visual art in PNG and PDF documents using design philosophy"
+    },
+    {
+      "name": "image-enhancer",
+      "path": "./image-enhancer",
+      "category": "creative-media",
+      "description": "Enhance image quality by improving resolution, sharpness, and clarity"
+    },
+    {
+      "name": "slack-gif-creator",
+      "path": "./slack-gif-creator",
+      "category": "creative-media",
+      "description": "Create animated GIFs optimized for Slack"
+    },
+    {
       "name": "theme-factory",
       "path": "./theme-factory",
       "category": "creative-media",
-      "description": "Apply professional themes to artifacts"
+      "description": "Apply professional themes to artifacts with 10 pre-set themes"
+    },
+    {
+      "name": "video-downloader",
+      "path": "./video-downloader",
+      "category": "creative-media",
+      "description": "Download videos from YouTube and other platforms"
+    },
+    {
+      "name": "file-organizer",
+      "path": "./file-organizer",
+      "category": "productivity-organization",
+      "description": "Intelligently organize files and folders with deduplication and cleanup"
+    },
+    {
+      "name": "invoice-organizer",
+      "path": "./invoice-organizer",
+      "category": "productivity-organization",
+      "description": "Organize invoices and receipts for tax preparation"
+    },
+    {
+      "name": "raffle-winner-picker",
+      "path": "./raffle-winner-picker",
+      "category": "productivity-organization",
+      "description": "Randomly select winners from lists with cryptographically secure randomness"
+    },
+    {
+      "name": "skill-share",
+      "path": "./skill-share",
+      "category": "collaboration",
+      "description": "Create and share OpenCode skills on Slack for team collaboration"
+    },
+    {
+      "name": "code-security-auditor",
+      "path": "./code-security-auditor",
+      "category": "security-systems",
+      "description": "Pre-execution security audits of untrusted codebases via static analysis"
     }
   ]
 }

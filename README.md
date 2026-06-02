@@ -58,7 +58,7 @@ OpenCode Skills are customizable workflows that teach OpenCode how to perform sp
 
 ### Data & Analysis
 
-- More skills coming soon!
+- [Developer Growth Analysis](./developer-growth-analysis/) - Analyzes your recent OpenCode chat history to identify coding patterns, development gaps, and areas for improvement, curates learning resources from HackerNews, and sends personalized growth reports. 📖 **Comprehensive**
 
 ### Business & Marketing
 
@@ -92,7 +92,7 @@ OpenCode Skills are customizable workflows that teach OpenCode how to perform sp
 
 ### Collaboration & Project Management
 
-- More skills coming soon!
+- [Skill Share](./skill-share/) - Creates new OpenCode skills and automatically shares them on Slack using Rube for seamless team collaboration and skill discovery. 📄 **Standard**
 
 ### Security & Systems
 

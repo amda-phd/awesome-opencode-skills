@@ -14,11 +14,9 @@ let OPENCODE_GLOBAL: string;
 let OPENCODE_PROJECT: string;
 
 export function initConfig(customSkillsDir?: string): void {
-  // Auto-detect skills directory
   SKILLS_DIR = customSkillsDir || path.resolve(__dirname, '..', '..');
 
-  // OpenCode installation paths
-  const HOME = process.env.HOME || process.env.USERPROFILE;
+  const HOME = process.env.HOME || process.env.USERPROFILE || '';
   OPENCODE_GLOBAL = path.join(HOME, '.config', 'opencode', 'skill');
   OPENCODE_PROJECT = path.join(process.cwd(), '.opencode', 'skill');
 

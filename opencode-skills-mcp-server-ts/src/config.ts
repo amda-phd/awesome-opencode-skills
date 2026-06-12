@@ -20,7 +20,10 @@ let OPENCODE_PROJECT: string;
 export function initConfig(customSkillsDir?: string): void {
   SKILLS_DIR = customSkillsDir || path.resolve(__dirname, '..', '..');
 
-  const HOME = process.env.HOME || process.env.USERPROFILE || '';
+  const HOME = process.env.HOME || process.env.USERPROFILE;
+  if (!HOME) {
+    throw new Error('Could not determine home directory: HOME or USERPROFILE environment variable must be set');
+  }
   OPENCODE_GLOBAL = path.join(HOME, '.config', 'opencode', 'skill');
   OPENCODE_PROJECT = path.join(process.cwd(), '.opencode', 'skill');
 
